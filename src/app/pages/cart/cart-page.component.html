@@ -1,13 +1,13 @@
 <div class="cart-page-container">
     <div class="cart-page-header">
-        <h1>Shopping Cart</h1>
+        <h1>Korpa</h1>
     </div>
     <div class="cart-page-content" *ngIf="cartList.length > 0">
         <div class="cart-item-header cart-item-row">
-            <div class="cart-item-cell cart-item-product"><span>Product</span></div>
-            <div class="cart-item-cell cart-item-quantity"><span>Quantity</span></div>
-            <div class="cart-item-cell cart-item-total"><span>Total</span></div>
-            <div class="cart-item-cell cart-item-action"><span>Action</span></div>
+            <div class="cart-item-cell cart-item-product"><span>Proizvod</span></div>
+            <div class="cart-item-cell cart-item-quantity"><span>Količina</span></div>
+            <div class="cart-item-cell cart-item-total"><span>cena</span></div>
+            <div class="cart-item-cell cart-item-action"><span>akcija</span></div>
         </div>
         <div class="cart-item-row" *ngFor="let cart of cartList;let i = index">
             <div class="cart-item-cell cart-item-product">
@@ -23,7 +23,7 @@
             </div>
             <div class="cart-item-cell cart-item-total">
                 <div class="item-price">
-                    {{cart.quantity*cart.product.price | currency :'USD':true }}
+                    {{cart.quantity*cart.product.price}} <span> din.</span>
                 </div>
             </div>
             <div class="cart-item-cell cart-item-action">
@@ -34,35 +34,37 @@
             <div class="col-lg-offset-6">
                 <div class="cart-total-row row">
                     <div class="col-md-6 cart-total-label">
-                        Cart overview
+                        pregled korpe
                     </div>
                     <div class="col-md-6 cart-total-value"></div>
                 </div>
                 <div class="cart-total-row row">
                     <div class="col-md-6 cart-total-label">
-                        subtotal
+                        ukupno
                     </div>
                     <div class="col-md-6 cart-total-value">
-                        {{totalPrice | currency :'USD':true}}
+                        {{totalPrice}} <span> din.</span>
                     </div>
                 </div>
                 <div class="cart-total-row row">
                     <div class="col-md-6 cart-total-label">
-                        total
+                        ukupno za plaćanje
                     </div>
                     <div class="col-md-6 cart-total-value cart-total-price">
-                        {{totalPrice | currency :'USD':true}} AUD
+                        {{totalPrice}} <span> din.</span>
                     </div>
                 </div>
             </div>
         </div>
         <div class="cart-buttons">
-            <div class="continue-shopping"><a routerLink="/">continue shopping</a></div>
-            <div class="checkout-button button button-primary button-large">Checkout ({{totalPrice | currency :'USD':true}})</div>
+            <div class="continue-shopping"><a routerLink="/">nastavi kupovinu</a></div>
+            <div class="checkout-button button button-primary button-large">Potvrdi kupovinu ({{totalPrice}} <span> din.</span>)</div>
         </div>
     </div>
+    <div style="height:100px"><div>
+
     <div class="cart-page-content" *ngIf="cartList.length == 0">
-        <h4>Your cart is empty.</h4>
-        <a routerLink="/">Go shopping</a>
+        <h4>Vaša korpa je prazna.</h4>
+        <a routerLink="/">Nazad na kupovinu</a>
     </div>
 </div>

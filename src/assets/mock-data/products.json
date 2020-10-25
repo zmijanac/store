@@ -1,44 +1,44 @@
 [
   {
-    "title": "Blue Stripe Stoneware Plate",
-    "brand": "Kiriko",
-    "price": 40,
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at purus pulvinar, placerat turpis ac, interdum metus. In eget massa sed enim hendrerit auctor a eget.",
-    "image": "blue-stripe-stoneware-plate.jpg"
+    "title": "Prirodno sušeni lešnik",
+    "brand": "1 kg",
+    "price": 750,
+    "description": "Prirodno sušeni lešnici sa izraženom karakterističnom aromom, prepuni omega3 masnih kiselina, probrani da zadovolje i najzahtevnije gurmane. Podižu raspoloženje i još štošta...",
+    "image": "neprzeni.jpg"
   },
   {
-    "title": "Hand Painted Blue Flat Dish",
-    "brand": "Kiriko",
-    "price": 28,
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at purus pulvinar, placerat turpis ac, interdum metus. In eget massa sed enim hendrerit auctor a eget arcu. Curabitur ac pharetra nisl, sit amet mattis dolor.",
-    "image": "hand-painted-blue-flat-dish.jpg"
+    "title": "Prženi lešnik",
+    "brand": "1 kg",
+    "price": 850,
+    "description": "Pažljivo prženi, izuzetno ukusni, aromatični, masni, jaki, hrskavi, hranljivi, ubijaju... ",
+    "image": "przeni.jpg"
   },
   {
-    "title": "Heme",
-    "brand": "Dust & Form",
-    "price": 52,
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at purus pulvinar, placerat turpis ac, interdum metus. In eget massa sed enim hendrerit auctor a eget arcu. Curabitur ac pharetra nisl, sit amet mattis dolor.",
-    "image": "heme.jpg"
+    "title": "Krem od lešnika i meda",
+    "brand": "400 g",
+    "price": 400,
+    "description": "Ovako nešto je malo verovatno da ste ikada probali. Za razliku od industrijskih kremova koji sadrže od 3 do 15 procenata lešnika; ova energetska bomba, sa 70% lešnika i 30 % meda patosiraće sve one koji ga probaju.",
+    "image": "krem.jpg"
   },
   {
-    "title": "Mashiko-Yaki Green Small Plate",
-    "brand": "Kiriko",
-    "price": 28,
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at purus pulvinar, placerat turpis ac, interdum metus. In eget massa sed enim hendrerit auctor a eget.",
+    "title": "Set za poklon",
+    "brand": "500g prženog lešnika i tegla 400g krema",
+    "price": 1150,
+    "description": "Samo za one do kojih vam je stalo.",
     "image": "mashiko-yaki-green-small-plate.jpg"
   },
   {
-    "title": "Mashiko-Yaki Indigo Small Plate",
-    "brand": "Kiriko",
-    "price": 28,
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at purus pulvinar, placerat turpis ac, interdum metus. In eget massa sed enim hendrerit auctor a eget.",
-    "image": "mashiko-yaki-indigo-small-plate.jpg"
+    "title": "Veći set za poklon",
+    "brand": "1kg prženog lešnika i tegla 400g krema",
+    "price": 1350,
+    "description": "Samo za one do kojih vam je mnogo više stalo.",
+    "image": "mashiko-yaki-green-small-plate.jpg"
   },
   {
-    "title": "Mashiko-Yaki Saucer",
-    "brand": "Kiriko",
-    "price": 18,
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at purus pulvinar, placerat turpis ac, interdum metus. In eget massa sed enim hendrerit auctor a eget.",
-    "image": "mashiko-yaki-saucer.jpg"
+    "title": "Najveći set za poklon",
+    "brand": "1kg prženog lešnika i tegla 400g krema",
+    "price": 1350,
+    "description": "Samo za one do kojih vam je najviše stalo.",
+    "image": "mashiko-yaki-green-small-plate.jpg"
   }
 ]

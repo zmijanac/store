@@ -1,11 +1,9 @@
 <div class="header-image">
     <div class="header-block">
         <div class="header-text">
-            <div class="header-text-title">Plates</div>
+            <div class="header-text-title">Dobrodošli u našu online prodavnicu</div>
             <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nec mollis sem. Etiam id luctus libero.
-                Vivamus vulputate urna eget velit iaculis, et interdum elit pellentesque. Duis porta nunc neque, nec volutpat erat lacinia a.
-            </p>
+                Nadamo se da ćete pronaći proizvod bla..bla...</p>
         </div>
     </div>
 </div>
@@ -15,14 +13,14 @@
             <div class="image-container">
                 <div class="product-image" [ngStyle]="{'background-image': 'url(./assets/imgs/' + product.image + ')'}"></div>
                 <div class="overlay">
-                    <div class="button button-primary" [routerLink]="['../product',i+1]">View Details</div>
-                    <div class="button button-primary" (click)="addToCart(product)">Add To Cart</div>
+                    <div class="button button-primary" [routerLink]="['../product',i+1]">pogledaj bliže</div>
+                    <div class="button button-primary" (click)="addToCart(product)">Stavi u korpu</div>
                 </div>
             </div>
             <div class="product-details">
                 <div class="product-brand">{{product.brand}}</div>
                 <div class="product-title">{{product.title}}</div>
-                <div class="product-price">{{product.price | currency :'USD':true }}</div>
+                <div class="product-price">{{product.price}} <span> din.</span> </div>
             </div>
         </div>
     </div>

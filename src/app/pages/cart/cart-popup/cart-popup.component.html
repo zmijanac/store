@@ -12,8 +12,9 @@
             {{cart.product.brand}}
         </span>
         <span class="pop-cart-item-price">
-            {{cart.product.price | currency :'USD':true }}
+            {{cart.product.price}}
         </span>
+        <span> din.</span>
     </div>
     <div class="pop-cart-remove-wrapper">
         <span (click)="removeFromCart(i)" class="cart-remove">X</span>
@@ -23,24 +24,23 @@
     <div class="cart-total">
         <div class="cart-total-item">
         <span class="cart-total-label">
-            Total
+            Ukupno
         </span>
             <span class="cart-total-value">
-            {{totalPrice | currency :'USD':true }}
+            {{totalPrice}}
         </span>
         </div>
     </div>
     <footer class="quick-cart-footer">
         <div class="quick-cart-footer-cell">
-            <div class="button button-secondary button-wide button-large" [routerLink]="['../cart']" (click)="cartService.toggleCart()">View Cart</div>
+            <div class="button button-secondary button-wide button-large" [routerLink]="['../cart']" (click)="cartService.toggleCart()">Pogledaj korpu</div>
         </div>
 
         <div class="quick-cart-footer-cell">
-            <div class="button button-primary button-wide button-large">Checkout</div>
+            <div class="button button-primary button-wide button-large">Potvrdi kupovinu</div>
         </div>
     </footer>
 </div>
 <div *ngIf="cartList.length == 0">
-    <strong class="cart-empty">Your cart is empty</strong>
+    <strong class="cart-empty">Vaša korpa je prazna</strong>
 </div>
-
