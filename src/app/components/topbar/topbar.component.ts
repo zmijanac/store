@@ -1,6 +1,4 @@
-/**
- * Created by andrew.yang on 7/28/2017.
- */
+
 import { Component, OnInit } from '@angular/core';
 import {CartService} from "../../services/cart.service";
 
@@ -44,7 +42,7 @@ import {CartService} from "../../services/cart.service";
                 <a routerLink="/">HOME</a>
             </li>
             <li>
-                <a routerLink="/">SHOP</a>
+                <a routerLink="/">PRODAVNICA</a>
             </li>
         </ul>
         <cart-popup></cart-popup>
