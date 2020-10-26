@@ -1,6 +1,4 @@
-/**
- * Created by andrew.yang on 7/31/2017.
- */
+
 import {Component, OnInit, Input, Output, EventEmitter} from '@angular/core';
 
 @Component({
@@ -10,7 +8,7 @@ import {Component, OnInit, Input, Output, EventEmitter} from '@angular/core';
       height: 58px;
       display: inline-block;
     }
-    .number, 
+    .number,
     .actions {
       height: 58px;
       width: 50px;
@@ -53,10 +51,10 @@ import {Component, OnInit, Input, Output, EventEmitter} from '@angular/core';
       -ms-user-select: none;
       user-select: none;
     }
-    input[type=number]::-webkit-inner-spin-button, 
-    input[type=number]::-webkit-outer-spin-button { 
-      -webkit-appearance: none; 
-      margin: 0; 
+    input[type=number]::-webkit-inner-spin-button,
+    input[type=number]::-webkit-outer-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
     }
   `],
     template: `

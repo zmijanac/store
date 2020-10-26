@@ -1,6 +1,3 @@
-/**
- * Created by andrew.yang on 7/31/2017.
- */
 
 import {NgModule} from "@angular/core";
 import {SharedModule} from "../../shared/shared.module";

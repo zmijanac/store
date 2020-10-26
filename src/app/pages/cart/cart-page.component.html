@@ -58,9 +58,45 @@
         </div>
         <div class="cart-buttons">
             <div class="continue-shopping"><a routerLink="/">nastavi kupovinu</a></div>
-            <div class="checkout-button button button-primary button-large">Potvrdi kupovinu ({{totalPrice}} <span> din.</span>)</div>
+            <div class="checkout-button button button-primary button-large" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Potvrdi kupovinu ({{totalPrice}} <span> din.</span>)</div>
         </div>
     </div>
+
+
+
+    <div id="id01" class="modal">
+
+      <form class="modal-content animate" action="/action_page.php" method="post" netlify>
+        <div class="imgcontainer">
+          <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+          <img src="img_avatar2.png" alt="Avatar" class="avatar">
+        </div>
+
+        <div style="padding:30px">
+          <label for="uname"><b>Ime i prezime</b></label>
+          <input type="text" placeholder="Vaše ime i prezime" name="uname" required>
+
+          <label for="adr"><b>Mesto i adresa</b></label>
+          <input type="text" placeholder="Mesto i adresu isporuke" name="adress" required>
+
+          <label for="tel"><b>Telefon</b></label>
+          <input type="number" placeholder="Upišite broj vašeg telefona" name="telephone" required>
+
+          <button type="submit">Potvrđujem porudžbinu</button>
+        </div>
+
+        <div style="padding:30px" style="background-color:#f1f1f1">
+          <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+          <span class="psw">Forgot <a href="#">password?</a></span>
+        </div>
+      </form>
+    </div>
+
+
+
+
+
+
     <div style="height:100px"><div>
 
     <div class="cart-page-content" *ngIf="cartList.length == 0">
@@ -68,3 +104,15 @@
         <a routerLink="/">Nazad na kupovinu</a>
     </div>
 </div>
+
+<script>
+// Get the modal
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
