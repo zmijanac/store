@@ -69,25 +69,23 @@
       <form class="modal-content animate" action="/action_page.php" method="post" netlify>
         <div class="imgcontainer">
           <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
-          <img src="img_avatar2.png" alt="Avatar" class="avatar">
         </div>
 
         <div style="padding:30px">
           <label for="uname"><b>Ime i prezime</b></label>
           <input type="text" placeholder="Vaše ime i prezime" name="uname" required>
 
-          <label for="adr"><b>Mesto i adresa</b></label>
-          <input type="text" placeholder="Mesto i adresu isporuke" name="adress" required>
+          <label for="adr"><b>Mesto, poštanski broj i adresa</b></label>
+          <input type="text" placeholder="Mesto i adresa isporuke" name="adress" required>
 
           <label for="tel"><b>Telefon</b></label>
-          <input type="number" placeholder="Upišite broj vašeg telefona" name="telephone" required>
+          <input type="tel" placeholder="Upišite broj vašeg telefona" name="telephone" required>
 
           <button type="submit">Potvrđujem porudžbinu</button>
         </div>
 
         <div style="padding:30px" style="background-color:#f1f1f1">
-          <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
-          <span class="psw">Forgot <a href="#">password?</a></span>
+          <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Otkazujem kupovinu</button>
         </div>
       </form>
     </div>
